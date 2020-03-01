@@ -62,7 +62,7 @@ $ api run apidoc
   $ npm run watch
 ```
 
-### 部署
+### 部署示例
 
 > 镜像容器为 node:12.6.0-buster-slim (体积较小)，若未满足要求，可以选择node:12.6.0-buster
 
