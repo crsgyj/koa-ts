@@ -11,9 +11,9 @@
 	  |—— controller   // 控制层
 	  |—— middleware   // 中间件层
 	  |—— models       // Model层
-    |—— router       // 路由层
-	  |—— service	     // 服务层
-	  |—— utils		     // 工具类
+    	  |—— router       // 路由层
+	  |—— service	   // 服务层
+	  |—— utils	   // 工具类
 	  |—— wsImpl.ts    // 基本websocket实现
 |—— config           // 配置文件
 |—— apidoc           // 文档目录，npm run apidoc生成
@@ -75,5 +75,5 @@ $ api run apidoc
   $ docker build registry.cn-hangzhou.aliyuncs.com/<repo>/apiServer:<tag> .
   # 在远端服务器:
   $ docker pull registry.cn-hangzhou.aliyuncs.com/<repo>/apiServer:<tag> \
-    && docker run -tid --name apiServer -p 30080:9091 --restart=always registry.cn-hangzhou.aliyuncs.com/<repo>/apiServer:<tag>
+    && docker run -tid --name apiServer -p 3000:3000 --restart=always registry.cn-hangzhou.aliyuncs.com/<repo>/apiServer:<tag>
 ```
