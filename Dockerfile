@@ -1,18 +1,15 @@
 FROM node:12.6.0-buster-slim
 # 用12.6.0-buster或 12.6.0-buster-slim(体积小)
-ENV NODE_ENV development
+ENV NODE_ENV production
 
-RUN mkdir /devvdb2/ && mkdir /devvdb2/nodekoa2
+RUN mkdir /app
 
-WORKDIR /devvdb2/nodekoa2
+WORKDIR /app
 
 COPY . .
 
 RUN npm install --production --ignore-scripts --silent
 
 EXPOSE 9091
+# 部署的时候可以将apidoc文件夹挂载到外边用nginx输出文档
 CMD npm run apidoc && npm start
-
-# sudo docker login --username=bsq0224 registry.cn-hangzhou.aliyuncs.com   # bsq@321321!
-# docker pull registry.cn-hangzhou.aliyuncs.com/bsq_repo/bsq-server:<tag>
-# docker run -tid --name bsqServer -p 30080:9091 --restart=always registry.cn-hangzhou.aliyuncs.com/bsq_repo/bsq-server:<tag>
