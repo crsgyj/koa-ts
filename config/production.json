@@ -1,0 +1,16 @@
+{
+  "models": {
+    "bsq": {
+      "host": "***",
+      "port": 3306,
+      "username": "root",
+      "password": "***",
+      "database": "***",
+      "dialect": "mysql",
+      "timezone": "+08:00",
+      "define": {
+        "underscored": false
+      }
+    }
+  }
+}

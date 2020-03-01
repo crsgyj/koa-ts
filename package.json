@@ -1,0 +1,67 @@
+{
+  "name": "blblkoa2",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "node index.js",
+    "start:dev": "cross-env NODE_ENV=development npm start",
+    "watch": "npx tsc -w",
+    "build": "rm -rf dist && tsc",
+    "test": "jest --coverage",
+    "lint": "eslint --ext .ts,.js --ignore-path .gitignore ./src",
+    "lint-fix": "eslint  --fix --ext .ts,.js --ignore-path .gitignore ./src",
+    "apidoc": "apidoc -i src -o apidoc"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run lint"
+    }
+  },
+  "devDependencies": {
+    "@types/bluebird": "^3.5.29",
+    "@types/hapi__joi": "^16.0.9",
+    "@types/jest": "^25.1.1",
+    "@types/koa": "^2.11.0",
+    "@types/koa-bodyparser": "^4.3.0",
+    "@types/koa-router": "^7.4.0",
+    "@types/koa__cors": "^3.0.1",
+    "@types/md5": "^2.1.33",
+    "@types/node": "^13.7.1",
+    "@types/source-map-support": "^0.5.1",
+    "@types/validator": "^12.0.1",
+    "@types/websocket": "^1.0.0",
+    "@typescript-eslint/eslint-plugin": "^2.20.0",
+    "@typescript-eslint/parser": "^2.20.0",
+    "eslint": "^6.8.0",
+    "husky": "^4.2.3",
+    "jest": "^25.1.0",
+    "ts-jest": "^25.2.0"
+  },
+  "dependencies": {
+    "@hapi/joi": "^17.1.0",
+    "@koa/cors": "2",
+    "@types/lodash": "^4.14.149",
+    "@types/supertest": "^2.0.8",
+    "apidoc": "^0.20.0",
+    "app-root-path": "^3.0.0",
+    "chalk": "^3.0.0",
+    "cross-env": "^7.0.0",
+    "http-status-codes": "^1.4.0",
+    "koa": "^2.11.0",
+    "koa-bodyparser": "^4.2.1",
+    "koa-router": "^8.0.6",
+    "lodash": "^4.17.15",
+    "log4js": "^6.1.1",
+    "md5": "^2.2.1",
+    "moment": "^2.24.0",
+    "mysql2": "^2.1.0",
+    "reflect-metadata": "^0.1.13",
+    "sequelize": "^5.21.4",
+    "sequelize-typescript": "^1.1.0",
+    "source-map-support": "^0.5.16",
+    "supertest": "^4.0.2",
+    "typescript": "^3.7.5",
+    "websocket": "^1.0.31"
+  }
+}
