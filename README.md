@@ -1,4 +1,4 @@
-# The koa sample project with typescript
+# 基于typescript的koa项目
 -- 2020
 ### 目录
 
