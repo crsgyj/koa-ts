@@ -1,4 +1,4 @@
-# koa with typescript example project
+# The koa sample project with typescript
 -- Jn in spring 2020
 ### 目录
 
