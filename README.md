@@ -1,5 +1,5 @@
 # The koa sample project with typescript
--- Jn in spring 2020
+-- 2020
 ### 目录
 
 ​	本项目主要基于 koa, koa-router, sequelize, typescript, node-websocket等模块编写。
